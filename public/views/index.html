@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Mocks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>   
+<body class="bg-dark">
+<div class="container mt-3 text-dark">  
+    <div class="alert mt-3 shadow bg-success text-secondary">
+        <div style="display: flex;justify-content: space-between">
+            <div>
+                <h3 id="titleWelcome"></h3>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary" id="buttonLogout">Logout</button>
+            </div>
+        </div>  
+    </div>
+ 
+    <div class="row alert shadow p-3 m-0 bg-secondary">
+        <div>
+            <div id="formProducts"></div>
+            <div id="tableProducts"></div>
+            <div id="mensajes"></div>
+            <div id="tableMensajes"></div>
+        </div>
+    </div> 
+       
+    
+</div>
+</body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>
+    <script src="../js/index.js"></script>
+</html>

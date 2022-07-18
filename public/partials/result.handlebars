@@ -1,0 +1,19 @@
+ 
+{{#if productsCount}}
+<div class="table-responsive">
+    <table class="table">
+        <tr class="text-warning">
+            <th>Title</th>
+            <th>Price</th>
+            <th>Thumbnail</th>
+        </tr>
+        {{#each productsData}}
+        <tr>
+            <td>{{title}}</td>
+            <td>{{price}}</td>
+            <td>{{thumbnail}}</td>
+        </tr>
+        {{/each}}
+    </table>
+{{/if}}
+</div>     
